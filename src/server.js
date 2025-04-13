@@ -12,7 +12,7 @@ const Product = require('./Models/Products');
 
 const app = express();
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin: "https://full-stack-application-vedx.onrender.com",
   credentials: true
 }));
 
