@@ -33,7 +33,7 @@ function Products() {
         e.preventDefault();
         setMessage('');
         try {
-            const res = await axios.post('http://localhost:5000/api/products', newProduct);
+            const res = await axios.post('https://full-stack-application-vedx.onrender.com/api/products', newProduct);
             setMessage(res.data.message);
             loadProducts();
             setNewProduct({ title: '', description: '', inventory: '' });
