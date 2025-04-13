@@ -23,7 +23,7 @@ function Login() {
         }
 
         try {
-            const res = await axios.post('http://localhost:5000/api/login', form);
+            const res = await axios.post('https://full-stack-application-vedx.onrender.com/api/login', form);
             const token = res.data.token;
             localStorage.setItem("token", token);
 
