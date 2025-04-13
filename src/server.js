@@ -1,12 +1,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const User = require('./User');
+const User = require('./Models/User');
 require('dotenv').config();
 const jwt = require("jsonwebtoken");
 const bcrypt = require('bcrypt');
 const { redirect } = require('react-router-dom');
-const Product = require('./Products');
+const Product = require('./Models/Products');
 
 
 
