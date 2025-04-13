@@ -97,7 +97,7 @@ app.post('/register', async (req, res) => {
     await newUser.save();
 
     res.status(201).json({ message: 'User registered successfully.', user: newUser });
-    redirect("/login")
+    // redirect("/login")
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Server error.' });

@@ -39,7 +39,7 @@ const Register = () => {
             const res = await axios.post('https://full-stack-application-vedx.onrender.com/register', form);
             setMessage(res.data.message);
             setForm({ username: '', email: '', password: '', role: '' });
-            navigate(`/login`)
+            navigate("/login");
         } catch (err) {
             console.error(err);
             setMessage('Registration failed.');
