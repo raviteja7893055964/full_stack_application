@@ -1,20 +1,12 @@
 {
-  "name": "src",
+  "name": "pages",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "react-scripts build",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^5.1.1",
-    "bcryptjs": "^3.0.2",
-    "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "jwt-decode": "^4.0.0"
-  },
-  "description": ""
+  "license": "ISC"
 }
