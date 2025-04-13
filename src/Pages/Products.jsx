@@ -20,7 +20,7 @@ function Products() {
         loadProducts();
     }, [newProduct]);
     const loadProducts = () => {
-        fetch('http://localhost:5000/api/products')
+        fetch('https://full-stack-application-vedx.onrender.com/api/products')
             .then((res) => res.json())
             .then((data) => setProducts(data))
             .catch((err) => console.error(err));
@@ -50,7 +50,7 @@ function Products() {
     const handleDelete = async (id) => {
         try {
             const token = localStorage.getItem('token');
-            await axios.delete(`http://localhost:5000/api/products/${id}`, {
+            await axios.delete(`https://full-stack-application-vedx.onrender.com/api/products/${id}`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setMessage("Product deleted successfully");
